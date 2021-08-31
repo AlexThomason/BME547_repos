@@ -17,10 +17,17 @@ def interface():
 
     return choice
    
-   
-def hdl_input():
-    hdl_value = int(input(("Enter HDL Value: ")))
-    return hdl_value
 
+def HDL_input():
+    HDL_value = int(input(("Enter HDL Value: ")))
+    return HDL_value
+
+def check_HDL():
+    if HDL_value >= 60:
+        return "Normal"
+    elif 40 <= HDL_value < 60:
+        return "Borderline Low"
+    else:
+        return "Low"
 
 interface()
