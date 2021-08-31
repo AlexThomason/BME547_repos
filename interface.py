@@ -57,12 +57,12 @@ def LDL_input():
     LDL_value = int(input(("Enter LDL Value: ")))
     return LDL_value
 
-def HDL_Driver():
+def LDL_Driver():
     LDL_value = LDL_input()
-    LDL_character = check_HDL(LDL_value)
+    LDL_character = check_LDL(LDL_value)
     HDL_output(LDL_value,LDL_character)
 
-def check_HDL(value):
+def check_LDL(value):
     if value < 130:
         return "Normal"
     elif 130 <= value <= 159:
@@ -72,8 +72,8 @@ def check_HDL(value):
     else:
         return "High"
 
-def HDL_output(value, character) :
-    print("Your HDL level is {}".format(value))
-    print("This HDL level is {}".format(character))
+def LDL_output(value, character) :
+    print("Your LDL level is {}".format(value))
+    print("This LDL level is {}".format(character))
 
 interface()
