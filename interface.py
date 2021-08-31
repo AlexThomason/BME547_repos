@@ -44,3 +44,4 @@ def HDL_output(value, character) :
 
 
 
+interface()
