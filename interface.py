@@ -11,6 +11,7 @@ def interface():
         print("0 = Quit")
         print("1 = HDL Analysis")
         print("2 = LDL Analysis")
+        print("3 = Cholesterol Analysis")
         choice = int(input("Make a choice: "))
         print(type(choice))
         
@@ -20,6 +21,8 @@ def interface():
             HDL_Driver()
         elif choice == 2:
             LDL_Driver()
+        elif choice == 3:
+            cholesterol_Driver()
         else :
             print ("Not an option - Please try again")    
 
@@ -75,5 +78,33 @@ def check_LDL(value):
 def LDL_output(value, character) :
     print("Your LDL level is {}".format(value))
     print("This LDL level is {}".format(character))
+
+
+# Cholesterol Check Functions
+
+def cholesterol_input():
+    cholesterol_value = int(input(("Enter Cholesterol Value: ")))
+    return cholesterol_value
+
+def cholesterol_Driver():
+    cholesterol_value = cholesterol_input()
+    cholesterol_character = check_cholesterol(cholesterol_value)
+    HDL_output(cholesterol_value,cholesterol_character)
+
+def check_cholesterol(value):
+    if value < 200:
+        return "Normal"
+    elif 200 <= value <= 239:
+        return "Borderline High"
+    else :
+        return "High"
+
+def cholesterol_output(value, character) :
+    print("Your cholesterol level is {}".format(value))
+    print("This cholesterol level is {}".format(character))
+
+
+
+
 
 interface()
