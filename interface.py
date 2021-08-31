@@ -8,7 +8,8 @@ def interface():
     while keep_running:
         print("My Program")
         print("Options:")
-        print("9 = Quit")
+        print("0 = Quit")
+        print("1 = HDL Analysis")
         choice = int(input("Make a choice: "))
         print(type(choice))
         
