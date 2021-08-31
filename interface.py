@@ -42,8 +42,7 @@ def HDL_output(value, character) :
     print("Your HDL level is {}".format(value))
     print("This HDL level is {}".format(character))
 
-HDL_input()
-check_HDL()
+
 HDL_Driver()
 
 
