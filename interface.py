@@ -31,9 +31,9 @@ def HDL_Driver():
     HDL_output(HDL_value,HDL_character)
 
 def check_HDL(value):
-    if HDL_value >= 60:
+    if value >= 60:
         return "Normal"
-    elif 40 <= HDL_value < 60:
+    elif 40 <= value < 60:
         return "Borderline Low"
     else:
         return "Low"
