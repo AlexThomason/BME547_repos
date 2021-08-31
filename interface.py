@@ -30,7 +30,7 @@ def HDL_Driver():
     HDL_character = check_HDL(HDL_value)
     HDL_output(HDL_value,HDL_character)
 
-def check_HDL():
+def check_HDL(value):
     if HDL_value >= 60:
         return "Normal"
     elif 40 <= HDL_value < 60:
