@@ -27,6 +27,7 @@ def HDL_input():
 def HDL_Driver():
     HDL_value = HDL_input()
     HDL_character = check_HDL(HDL_value)
+    HDL_output(HDL_value,HDL_character)
 
 def check_HDL():
     if HDL_value >= 60:
@@ -36,5 +37,12 @@ def check_HDL():
     else:
         return "Low"
 
+def HDL_output(value, character) :
+    print("Your HDL level is {}".format(value))
+    print("This HDL level is {}".format(character))
+
+HDL_input()
+check_HDL()
+HDL_Driver()
 
 
