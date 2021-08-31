@@ -13,7 +13,7 @@ def interface():
         choice = int(input("Make a choice: "))
         print(type(choice))
         
-        if choice == 9:
+        if choice == 0:
             keep_running = False
         elif choice == 1:
             HDL_Driver()
@@ -42,7 +42,5 @@ def HDL_output(value, character) :
     print("Your HDL level is {}".format(value))
     print("This HDL level is {}".format(character))
 
-
-HDL_Driver()
 
 
