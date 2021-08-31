@@ -14,6 +14,8 @@ def interface():
         
         if choice == 9:
             keep_running = False
+        elif choice == 1:
+            HDL_Driver()
 
     return choice
    
@@ -21,6 +23,10 @@ def interface():
 def HDL_input():
     HDL_value = int(input(("Enter HDL Value: ")))
     return HDL_value
+
+def HDL_Driver():
+    HDL_value = HDL_input()
+    HDL_character = check_HDL(HDL_value)
 
 def check_HDL():
     if HDL_value >= 60:
@@ -30,4 +36,5 @@ def check_HDL():
     else:
         return "Low"
 
-interface()
+
+
