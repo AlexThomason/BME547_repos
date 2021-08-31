@@ -81,6 +81,7 @@ def LDL_output(value, character) :
 
 
 # Cholesterol Check Functions
+# Stevan would have done this so much better
 
 def cholesterol_input():
     cholesterol_value = int(input(("Enter Cholesterol Value: ")))
