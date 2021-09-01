@@ -1,6 +1,8 @@
 # returns.py
 # Author Alex Thomason
 
+print("This is the interface.py module")
+print("It's name is {}".format(__name__))
 
 def interface():
     print("Blood Calculator")
@@ -107,5 +109,5 @@ def cholesterol_output(value, character) :
 
 
 
-
-interface()
+if __name__ == "__main__":
+    interface()
