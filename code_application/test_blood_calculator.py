@@ -20,7 +20,7 @@ def test_hdl_analysis_low():
 
 import pytest
 
-# @pytest is a decorator - must be put before the test function
+# @pytest is a decorator - must be put before the test function. A decorator performs the function before and after the function runs.
 @pytest.mark.parametrize("HDL_value, expected",[   
 (65,"Normal"),
 (45,"Borderline Low"),
