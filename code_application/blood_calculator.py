@@ -30,7 +30,6 @@ def interface():
 
     return choice
    
-
 # HDL Functions
 
 def HDL_input():
